@@ -22,3 +22,47 @@ h1 {
 p {
   text-align: left;
 }
+
+@keyframes slideFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-fade {
+  animation: slideFadeUp 0.8s ease-out forwards;
+}
+
+@keyframes slideFadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-fade-left {
+  animation: slideFadeLeft 0.8s ease-out forwards;
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-slideFade {
+  animation: slideFade 0.7s ease-in-out;
+}
